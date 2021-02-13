@@ -1,0 +1,39 @@
+﻿@page
+@model Laboratorio1Web.Pages.PeliculasModel
+@{
+}
+
+<h1>Listado de Peliculas </h1>
+<a class="btn btn-sm btn-success" asp-page="/CrearPelicula">Crear Pelicula</a>
+<br /><br />
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Codigo</th>
+            <th>Titulo</th>
+            <th>Año</th>
+            <th>Duracion</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Peliculas)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Codigo</td>
+            <td>@item.Titulo</td>
+            <td>@item.Año</td>
+            <td>@item.Duracion</td>
+            <td>
+                <a class="btn btn-sm btn-info" asp-area="" asp-page="/EditarPelicula" asp-route-id="@item.Id">Editar</a>
+                <a class="btn btn-sm btn-info" asp-area="" asp-page="/DetallesPelicula" asp-route-id="@item.Id">Detalles</a>
+                <a class="btn btn-sm btn-info" asp-area="" asp-page="/EliminarPelicula" asp-route-id="@item.Id">Eliminar</a>
+            </td>
+            
+        </tr>
+        }
+        
+    </tbody>
+</table>

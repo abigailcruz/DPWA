@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio1DATA", "Laboratorio1DATA\Laboratorio1DATA.csproj", "{B7229521-1B11-46C5-BF6D-09E179DAA569}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laboratorio1DATA", "Laboratorio1DATA\Laboratorio1DATA.csproj", "{B7229521-1B11-46C5-BF6D-09E179DAA569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio1Models", "Laboratorio1Models\Laboratorio1Models.csproj", "{620B7ED3-C884-4F64-9A8C-8B67EB39CD18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laboratorio1Models", "Laboratorio1Models\Laboratorio1Models.csproj", "{620B7ED3-C884-4F64-9A8C-8B67EB39CD18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio1Web", "Laboratorio1Web\Laboratorio1Web.csproj", "{FA69A667-8B1F-40A1-9F49-54ACA944A963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laboratorio1Web", "Laboratorio1Web\Laboratorio1Web.csproj", "{FA69A667-8B1F-40A1-9F49-54ACA944A963}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

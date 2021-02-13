@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Laboratorio1DATA.Interfaces
 {
-    interface IRepository<T> where T : EntityBase
+    public interface IRepository<T> where T : EntityBase
     {
         T GetById(int Id);
         IEnumerable<T> List();

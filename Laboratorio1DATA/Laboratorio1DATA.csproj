@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Laboratorio1Models\Laboratorio1Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

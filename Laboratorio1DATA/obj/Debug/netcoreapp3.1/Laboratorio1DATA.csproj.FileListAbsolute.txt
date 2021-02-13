@@ -2,3 +2,11 @@ C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\bin\Debug\netcoreapp3.1\
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\obj\Debug\netcoreapp3.1\Laboratorio1DATA.csprojAssemblyReference.cache
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\obj\Debug\netcoreapp3.1\Laboratorio1DATA.AssemblyInfoInputs.cache
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\obj\Debug\netcoreapp3.1\Laboratorio1DATA.AssemblyInfo.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\bin\Debug\netcoreapp3.1\Laboratorio1DATA.deps.json
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\bin\Debug\netcoreapp3.1\Laboratorio1DATA.dll
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\bin\Debug\netcoreapp3.1\Laboratorio1DATA.pdb
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\bin\Debug\netcoreapp3.1\Laboratorio1Models.pdb
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\obj\Debug\netcoreapp3.1\Laboratorio1DATA.csproj.CoreCompileInputs.cache
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\obj\Debug\netcoreapp3.1\Laboratorio1DATA.csproj.CopyComplete
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\obj\Debug\netcoreapp3.1\Laboratorio1DATA.dll
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1DATA\obj\Debug\netcoreapp3.1\Laboratorio1DATA.pdb

@@ -1,0 +1,9 @@
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\bin\Debug\netcoreapp3.1\Laboratorio1Models.deps.json
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\bin\Debug\netcoreapp3.1\Laboratorio1Models.dll
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\bin\Debug\netcoreapp3.1\Laboratorio1Models.pdb
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\obj\Debug\netcoreapp3.1\Laboratorio1Models.csprojAssemblyReference.cache
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\obj\Debug\netcoreapp3.1\Laboratorio1Models.AssemblyInfoInputs.cache
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\obj\Debug\netcoreapp3.1\Laboratorio1Models.AssemblyInfo.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\obj\Debug\netcoreapp3.1\Laboratorio1Models.csproj.CoreCompileInputs.cache
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\obj\Debug\netcoreapp3.1\Laboratorio1Models.dll
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Models\obj\Debug\netcoreapp3.1\Laboratorio1Models.pdb

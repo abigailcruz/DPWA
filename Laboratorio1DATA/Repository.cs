@@ -1,7 +1,9 @@
 ﻿using Laboratorio1DATA.Interfaces;
 using Laboratorio1Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
@@ -9,35 +11,47 @@ namespace Laboratorio1DATA
 {
     public class Repository<T> : IRepository<T> where T : EntityBase
     {
-      
-        public T GetById(int Id)
+        private readonly ApplicationDbContext _dbContext;
+
+        public Repository(ApplicationDbContext dbContext)
         {
-            throw new NotImplementedException();
+            _dbContext = dbContext;
         }
 
-        public IEnumerable<T> List()
+        public virtual T GetById(int Id)
         {
-            throw new NotImplementedException();
+            return _dbContext.Set<T>().Find(Id);
         }
 
-        public IEnumerable<T> List(Expression<Func<T, bool>> predicate)
+        public virtual IEnumerable<T> List()
         {
-            throw new NotImplementedException();
+            return _dbContext.Set<T>().AsEnumerable();
+
+        }
+
+        public virtual IEnumerable<T> List(Expression<Func<T, bool>> predicate)
+        {
+            return _dbContext.Set<T>()
+                .Where(predicate)
+                .AsEnumerable();
         }
 
         public void Insert(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<T>().Add(entity);
+            _dbContext.SaveChanges();
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            _dbContext.SaveChanges();
         }
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<T>().Remove(entity);
+            _dbContext.SaveChanges();
         }
     }
 }

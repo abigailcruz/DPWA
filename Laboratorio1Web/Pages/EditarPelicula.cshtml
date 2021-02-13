@@ -1,0 +1,37 @@
+﻿@page
+@model Laboratorio1Web.Pages.EditarPeliculaModel
+@{
+}
+
+
+<form method="post">
+    <input type="hidden" asp-for="Pelicula.Id" />
+    <div asp-validation-summary="ModelOnly"> </div>
+    <div class="form-group">
+        <label asp-for="Pelicula.Codigo">
+            <input type="text" class="form-control" asp-for="Pelicula.Codigo" placeholder="Ingresa el codigo de la pelicula">
+        </label>
+        <span class="text-danger" asp-validation-for="Pelicula.Codigo"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Pelicula.Titulo">
+            <input type="text" class="form-control" asp-for="Pelicula.Titulo" placeholder="Ingresa el titulo de la pelicula">
+        </label>
+        <span class="text-danger" asp-validation-for="Pelicula.Titulo"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Pelicula.Año">
+            <input type="text" class="form-control" asp-for="Pelicula.Año" placeholder="Ingresa el año de la pelicula">
+        </label>
+        <span class="text-danger" asp-validation-for="Pelicula.Año"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Pelicula.Duracion">
+            <input type="text" class="form-control" asp-for="Pelicula.Duracion" placeholder="Ingresa la duracion de la pelicula">
+        </label>
+        <span class="text-danger" asp-validation-for="Pelicula.Duracion"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button> <br />
+                                                                  <a asp-page="/Peliculas">Regresar a Peliculas</a>
+</form>
