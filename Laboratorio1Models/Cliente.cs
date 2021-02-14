@@ -23,7 +23,7 @@ namespace Laboratorio1Models
         [Display(Name = "Telefono de Cliente")]
         public string Telefono { get; set; }
 
-        public ICollection<Prestamo> Prestamos { get; set; }
+        //public ICollection<Prestamo> Prestamos { get; set; }
 
     }
 }

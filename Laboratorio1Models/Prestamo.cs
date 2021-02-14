@@ -18,12 +18,12 @@ namespace Laboratorio1Models
         public DateTime FechaDevolucion { get; set; }
         [Required(ErrorMessage = "El campo IdCliente no puede estar vacio")]
         [Display(Name = "Id Cliente")]
-        public int ClientID { get; set; }
+        public int ClienteID { get; set; }
         [Required(ErrorMessage = "El campo pelicula no puede estar vacio")]
         [Display(Name = "ID Pelicula")]
         public int PeliculaID { get; set; }
 
-        public Cliente Cliente { get; set; }
-        public Pelicula Pelicula { get; set; }
+        
+
     }
 }

@@ -3,20 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Laboratorio1DATA.Migrations
 {
-    public partial class SecondMigration : Migration
+    public partial class PrimerMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "Duracion",
-                table: "Peliculas",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "",
-                oldClrType: typeof(string),
-                oldType: "nvarchar(max)",
-                oldNullable: true);
-
             migrationBuilder.CreateTable(
                 name: "Clientes",
                 columns: table => new
@@ -35,6 +25,22 @@ namespace Laboratorio1DATA.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Peliculas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Codigo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Año = table.Column<int>(type: "int", nullable: false),
+                    Duracion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Peliculas", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Prestamos",
                 columns: table => new
                 {
@@ -43,53 +49,25 @@ namespace Laboratorio1DATA.Migrations
                     CodigoPrestamo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FechaPrestamo = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaDevolucion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ClientID = table.Column<int>(type: "int", nullable: false),
-                    PeliculaID = table.Column<int>(type: "int", nullable: false),
-                    ClienteId = table.Column<int>(type: "int", nullable: true)
+                    ClienteID = table.Column<int>(type: "int", nullable: false),
+                    PeliculaID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Prestamos", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Prestamos_Clientes_ClienteId",
-                        column: x => x.ClienteId,
-                        principalTable: "Clientes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Prestamos_Peliculas_PeliculaID",
-                        column: x => x.PeliculaID,
-                        principalTable: "Peliculas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Prestamos_ClienteId",
-                table: "Prestamos",
-                column: "ClienteId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Prestamos_PeliculaID",
-                table: "Prestamos",
-                column: "PeliculaID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Prestamos");
-
-            migrationBuilder.DropTable(
                 name: "Clientes");
 
-            migrationBuilder.AlterColumn<string>(
-                name: "Duracion",
-                table: "Peliculas",
-                type: "nvarchar(max)",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+            migrationBuilder.DropTable(
+                name: "Peliculas");
+
+            migrationBuilder.DropTable(
+                name: "Prestamos");
         }
     }
 }

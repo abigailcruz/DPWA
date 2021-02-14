@@ -23,20 +23,21 @@
     <tbody>
         @foreach (var item in Model.Prestamos)
         {
-          <tr>
-            <td>@item.Id</td>
-            <td>@item.CodigoPrestamo</td>
-            <td>@item.FechaPrestamo</td>
-            <td>@item.FechaDevolucion</td>
-            <td>@item.ClientID</td>
-            <td>@item.PeliculaID</td>
-            <td>
-                <a class="btn btn-sm btn-info" asp-area="" asp-page="/EditarPrestamo" asp-route-id="@item.Id">Editar</a>
-                <a class="btn btn-sm btn-info" asp-area="" asp-page="/Prestamos" asp-route-id="@item.Id">Eliminar</a>
-            </td>
-
-          </tr>
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CodigoPrestamo</td>
+                <td>@item.FechaPrestamo</td>
+                <td>@item.FechaDevolucion</td>
+                <td>@item.ClienteID</td>
+                <td>@item.PeliculaID</td>
+                <td>
+                    <a class="btn btn-sm btn-info" asp-area="" asp-page="/EditarPrestamo" asp-route-id="@item.Id">Editar</a>
+                    <a class="btn btn-sm btn-info" asp-area="" asp-page="/EliminarPrestamo" asp-route-id="@item.Id">Eliminar</a>
+                </td>
+                
+            </tr>
         }
+
 
     </tbody>
 </table>

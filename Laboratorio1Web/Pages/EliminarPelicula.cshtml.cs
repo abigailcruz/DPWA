@@ -42,6 +42,7 @@ namespace Laboratorio1Web.Pages
 
                 return NotFound();
 
+            
             PeliculaToDelete.Codigo = Pelicula.Codigo;
             PeliculaToDelete.Titulo = Pelicula.Titulo;
             PeliculaToDelete.Año = Pelicula.Año;
@@ -50,6 +51,5 @@ namespace Laboratorio1Web.Pages
             _peliculaRepository.Delete(PeliculaToDelete);
             return RedirectToPage("./Peliculas");
         }
-
     }
 }

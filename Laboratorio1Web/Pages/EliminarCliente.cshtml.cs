@@ -9,11 +9,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Laboratorio1Web.Pages
 {
-    public class EditarClienteModel : PageModel
+    public class EliminarClienteModel : PageModel
     {
+
         private readonly IClienteRepository _clienteRepository;
 
-        public EditarClienteModel(IClienteRepository clienteRepository)
+        public EliminarClienteModel(IClienteRepository clienteRepository)
         {
             _clienteRepository = clienteRepository;
         }
@@ -37,18 +38,17 @@ namespace Laboratorio1Web.Pages
                 return Page();
             }
 
-            var ClienteToUpdate = _clienteRepository.GetById(Id);
-            if (ClienteToUpdate == null)
+            var ClienteToDelete = _clienteRepository.GetById(Id);
+            if (ClienteToDelete == null)
 
                 return NotFound();
 
-            ClienteToUpdate.CodigoCliente = Cliente.CodigoCliente;
-            ClienteToUpdate.NombreCliente = Cliente.NombreCliente;
-            ClienteToUpdate.ApellidoCliente = Cliente.ApellidoCliente;
-            ClienteToUpdate.Direccion = Cliente.Direccion;
-            ClienteToUpdate.Telefono = Cliente.Telefono;
+            ClienteToDelete.CodigoCliente = Cliente.CodigoCliente;
+            ClienteToDelete.NombreCliente = Cliente.NombreCliente;
+            ClienteToDelete.ApellidoCliente = Cliente.ApellidoCliente;
+            ClienteToDelete.Direccion = Cliente.Direccion;
 
-            _clienteRepository.Update(ClienteToUpdate);
+            _clienteRepository.Delete(ClienteToDelete);
             return RedirectToPage("./Clientes");
         }
     }

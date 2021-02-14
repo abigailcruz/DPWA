@@ -8,7 +8,7 @@ namespace Laboratorio1DATA.Repositories
 {
     public class ClienteRepository : Repository<Cliente>, IClienteRepository
     {
-        private readonly ApplicationDbContext _db;
+        public readonly ApplicationDbContext _db;
         public ClienteRepository(ApplicationDbContext db) : base(db)
         {
 

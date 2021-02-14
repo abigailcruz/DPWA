@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Laboratorio1Web.Pages
 {
-    public class EditarPrestamoModel : PageModel
+    public class EliminarPrestamoModel : PageModel
     {
         private readonly IPrestamoRepository _prestamoRepository;
 
-        public EditarPrestamoModel(IPrestamoRepository prestamoRepository)
+        public EliminarPrestamoModel(IPrestamoRepository prestamoRepository)
         {
             _prestamoRepository = prestamoRepository;
         }
@@ -37,17 +37,18 @@ namespace Laboratorio1Web.Pages
                 return Page();
             }
 
-            var PrestamoToUpdate = _prestamoRepository.GetById(Id);
-            if (PrestamoToUpdate == null)
+            var PrestamoToDelete = _prestamoRepository.GetById(Id);
+            if (PrestamoToDelete == null)
 
                 return NotFound();
 
-            PrestamoToUpdate.CodigoPrestamo = Prestamo.CodigoPrestamo;
-            PrestamoToUpdate.FechaPrestamo = Prestamo.FechaPrestamo;
-            PrestamoToUpdate.FechaDevolucion = Prestamo.FechaDevolucion;
-           
+            PrestamoToDelete.CodigoPrestamo = Prestamo.CodigoPrestamo;
+            PrestamoToDelete.FechaPrestamo = Prestamo.FechaPrestamo;
+            PrestamoToDelete.FechaDevolucion = Prestamo.FechaDevolucion;
+            PrestamoToDelete.ClienteID = Prestamo.ClienteID;
+            PrestamoToDelete.PeliculaID = Prestamo.PeliculaID;
 
-            _prestamoRepository.Update(PrestamoToUpdate);
+            _prestamoRepository.Delete(PrestamoToDelete);
             return RedirectToPage("./Prestamos");
         }
     }

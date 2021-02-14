@@ -47,6 +47,7 @@ namespace Laboratorio1Web.Pages
             PeliculaToUpdate.Titulo = Pelicula.Titulo;
             PeliculaToUpdate.Año = Pelicula.Año;
             PeliculaToUpdate.Duracion = Pelicula.Duracion;
+            
 
             _peliculaRepository.Update(PeliculaToUpdate);
             return RedirectToPage("./Peliculas");

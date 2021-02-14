@@ -25,7 +25,6 @@ C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Laborato
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Laboratorio1Web.RazorCoreGenerate.cache
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
@@ -400,3 +399,5 @@ C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pa
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\CrearCliente.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\CrearPrestamo.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\EditarPrestamo.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\EliminarCliente.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\EliminarPrestamo.cshtml.g.cs

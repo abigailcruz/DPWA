@@ -18,6 +18,7 @@ namespace Laboratorio1Models
         [Required(ErrorMessage = "El campo Duracion no puede estar vacio")]
         public string Duracion { get; set; }
 
-        public ICollection<Prestamo> Prestamos { get; set; }
+        /*//relacion
+        public ICollection<Prestamo> Prestamos { get; set; }*/
     }
 }

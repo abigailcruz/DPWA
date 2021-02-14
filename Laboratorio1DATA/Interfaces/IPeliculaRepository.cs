@@ -7,5 +7,6 @@ namespace Laboratorio1DATA.Interfaces
 {
     public interface IPeliculaRepository : IRepository<Pelicula>
     {
+       
     }
 }

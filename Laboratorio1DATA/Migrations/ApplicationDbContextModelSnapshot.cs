@@ -85,10 +85,7 @@ namespace Laboratorio1DATA.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("ClientID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ClienteId")
+                    b.Property<int>("ClienteID")
                         .HasColumnType("int");
 
                     b.Property<string>("CodigoPrestamo")
@@ -106,38 +103,7 @@ namespace Laboratorio1DATA.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClienteId");
-
-                    b.HasIndex("PeliculaID");
-
                     b.ToTable("Prestamos");
-                });
-
-            modelBuilder.Entity("Laboratorio1Models.Prestamo", b =>
-                {
-                    b.HasOne("Laboratorio1Models.Cliente", "Cliente")
-                        .WithMany("Prestamos")
-                        .HasForeignKey("ClienteId");
-
-                    b.HasOne("Laboratorio1Models.Pelicula", "Pelicula")
-                        .WithMany("Prestamos")
-                        .HasForeignKey("PeliculaID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cliente");
-
-                    b.Navigation("Pelicula");
-                });
-
-            modelBuilder.Entity("Laboratorio1Models.Cliente", b =>
-                {
-                    b.Navigation("Prestamos");
-                });
-
-            modelBuilder.Entity("Laboratorio1Models.Pelicula", b =>
-                {
-                    b.Navigation("Prestamos");
                 });
 #pragma warning restore 612, 618
         }

@@ -8,7 +8,7 @@ namespace Laboratorio1DATA.Repositories
 {
     public class PeliculaRepository : Repository<Pelicula>, IPeliculaRepository
     {
-        private readonly ApplicationDbContext _db;
+        public readonly ApplicationDbContext _db;
         public PeliculaRepository(ApplicationDbContext db) : base(db)
         {
 
