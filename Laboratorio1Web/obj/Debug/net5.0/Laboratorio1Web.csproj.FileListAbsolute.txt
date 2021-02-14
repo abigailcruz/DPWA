@@ -393,3 +393,10 @@ C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\bin\Debug\net5.0\Laborato
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Peliculas.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\EditarPelicula.cshtml.g.cs
 C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\CrearPelicula.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\EliminarPelicula.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Clientes.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\Prestamos.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\EditarCliente.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\CrearCliente.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\CrearPrestamo.cshtml.g.cs
+C:\Users\Aby\source\repos\Laboratorio1\Laboratorio1Web\obj\Debug\net5.0\Razor\Pages\EditarPrestamo.cshtml.g.cs

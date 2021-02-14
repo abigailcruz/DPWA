@@ -1,0 +1,43 @@
+﻿@page
+@model Laboratorio1Web.Pages.ClientesModel
+@{
+}
+
+<h1>Listado de Clientes</h1>
+
+
+<a class="btn btn-sm btn-success" asp-page="/CrearCliente">Crear Cliente</a>
+<br />
+<br />
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>CodigoCliente</th>
+            <th>NombreCliente</th>
+            <th>ApellidoCliente</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Clientes)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CodigoCliente</td>
+                <td>@item.NombreCliente</td>
+                <td>@item.ApellidoCliente</td>
+                <td>@item.Direccion</td>
+                <td>@item.Telefono</td>
+                <td>
+                    <a class="btn btn-sm btn-info" asp-area="" asp-page="/EditarCliente" asp-route-id="@item.Id">Editar</a>
+                    <a class="btn btn-sm btn-info" asp-area="" asp-page="/Clientes" asp-route-id="@item.Id">Eliminar</a>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>

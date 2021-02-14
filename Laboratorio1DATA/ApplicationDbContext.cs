@@ -14,5 +14,7 @@ namespace Laboratorio1DATA
         }
 
         public DbSet<Pelicula> Peliculas { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Prestamo> Prestamos { get; set; }
     }
 }

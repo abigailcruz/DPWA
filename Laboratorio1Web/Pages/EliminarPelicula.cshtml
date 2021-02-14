@@ -1,0 +1,37 @@
+﻿@page
+@model Laboratorio1Web.Pages.EliminarPeliculaModel
+
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Pelicula</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pelicula.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.Pelicula.Codigo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pelicula.Titulo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pelicula.Año)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayFor(model => model.Pelicula.Duracion)
+        </dt>
+
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Pelicula.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a asp-page="./Peliculas">Regresar a Peliculas</a>
+    </form>
+</div>
